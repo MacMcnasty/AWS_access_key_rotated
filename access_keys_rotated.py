@@ -1,11 +1,11 @@
 # Creating a Lambda function that evaluates IAM key age and sending an SES notification if key is older than X days
-
+# Author Marshawn A. McLeod, Cloud Infrastructure Architect 
 import boto3
 from datetime import datetime, timedelta
 import dateutil.parser
 
 MAX_KEY_AGE = 90
-MY_EMAIL = "albsilv@amazon.com"
+MY_EMAIL = "" 
 
 iam_client = boto3.client('iam')
 ses_client = boto3.client('ses')

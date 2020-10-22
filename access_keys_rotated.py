@@ -1,5 +1,5 @@
 # Creating a Lambda function that evaluates IAM key age and sending an SES notification if key is older than X days
-# Author Marshawn A. McLeod, Cloud Infrastructure Architect 
+# Author Marshawn A. McLeod, Cloud Infrastructure Architect, AWS
 import boto3
 from datetime import datetime, timedelta
 import dateutil.parser
